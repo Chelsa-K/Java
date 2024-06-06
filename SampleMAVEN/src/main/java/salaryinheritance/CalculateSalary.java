@@ -2,25 +2,16 @@ package salaryinheritance;
 
 public class CalculateSalary extends SalaryClass1
 {
+	double hra, pf;
 	public void salarybreaking() 
 	{
+		
 	 
-		double hra = (basicpay/100)*5;
-		double pf = (basicpay/100)*20;
-
-		double totalSalary= basicpay + hra - pf - deduction + bonus;
-		
-		
-		
+	 
+		 hra = 0.05* basicpay;
+		 pf = basicpay/100*20;
 	
 	}
 	
-	public static void main(String[] args) {
-		CalculateSalary s= new CalculateSalary();
-		s.salarybreaking();
-		s.salary();
-		
-
-	}
-
+	
 }

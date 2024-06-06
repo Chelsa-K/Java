@@ -3,18 +3,22 @@ import java.util.*;
 
 public class SalaryClass1 
 {
+  double basicpay,deduction, bonus;
 	public void salary() 
 	{
-	Scanner sc = new Scanner(System.in);
+		
+	 Scanner sc = new Scanner(System.in);
 	
 	System.out.println("Enter the basic pay: ");
-	double basicpay = sc.nextInt();
+	 basicpay = sc.nextDouble();
 	
 	System.out.println("Enter the deduction amount: ");
-	double deduction = sc.nextInt();
+	 deduction = sc.nextDouble();
 	
 	System.out.println("Enter the bonus received: ");
-	double bonus = sc.nextInt();
-
-}
+	 bonus = sc.nextDouble();
+	sc.close();
+	}
+	
+	
 }
